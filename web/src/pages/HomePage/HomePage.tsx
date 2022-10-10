@@ -1,5 +1,5 @@
 // NOTE: This BtnDefault import doesnt work
-// import BtnDefault from '@components/Btn/BtnDefault.tsx'
+import BtnDefault from '@components/Btn/BtnDefault.tsx'
 
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
@@ -17,7 +17,7 @@ const HomePage = () => {
         My default route is named <code>home</code>, link to me with `
         <Link to={routes.home()}>Home</Link>`
       </p>
-      {/* <BtnDefault /> */}
+      <BtnDefault />
     </>
   )
 }
