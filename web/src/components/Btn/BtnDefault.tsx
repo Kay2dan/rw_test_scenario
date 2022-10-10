@@ -1,24 +1,25 @@
-import { FC } from "react";
+import { FC } from 'react'
 // import { BtnGenericFCType } from "app/types";
 
-export interface BtnGenericFCType {
-  type?: "button" | "reset" | "submit" | undefined;
-  disabled?: boolean;
-  classes?: string;
-  parentClasses?: string;
-  onClickHandler?: (...args) => void;
-  children?: JSX.Element;
-  id?: string;
-  // size?: "lg" | "sm";
-}
+// export interface BtnGenericFCType {
+//   type?: "button" | "reset" | "submit" | undefined;
+//   disabled?: boolean;
+//   classes?: string;
+//   parentClasses?: string;
+//   onClickHandler?: (...args) => void;
+//   children?: JSX.Element;
+//   id?: string;
+//   // size?: "lg" | "sm";
+// }
 
-const BtnDefault: FC<BtnGenericFCType> = ({
+// const BtnDefault: FC<BtnGenericFCType> = ({
+const BtnDefault = ({
   children,
-  classes = "",
-  parentClasses = "my-8",
+  classes = '',
+  parentClasses = 'my-8',
   disabled = false,
   onClickHandler,
-  type = "button",
+  type = 'button',
   id,
 }) => {
   return (
@@ -28,11 +29,12 @@ const BtnDefault: FC<BtnGenericFCType> = ({
         type={type}
         disabled={disabled}
         onClick={onClickHandler}
-        className={`btn animCircle ${classes}`}>
+        className={`btn animCircle ${classes}`}
+      >
         {children}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default BtnDefault;
+export default BtnDefault
