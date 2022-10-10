@@ -1,6 +1,6 @@
 # Issues in the repo
 
-There are 2 issues in the repo.
+I am facing 2 issues in the repo.
 
 ## 1- dbAuth error
 
